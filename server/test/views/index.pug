@@ -1,0 +1,18 @@
+html
+  head
+    title= title
+  body
+    h1= message
+
+  form(action="/data" method="post")
+    label(for="name") Nombre
+    br/
+    input(type="text" name="name" placeholder="Coloca tu nombre")
+    
+    br/
+
+    label(for="message") Mensaje
+    br/
+    input(type="text" name="message" placeholder="Coloca tu mensaje")
+
+    input(type="submit", value="send")
